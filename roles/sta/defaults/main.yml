@@ -1,0 +1,10 @@
+---
+
+# Github vars
+repo_name: https://github.com/abims-sbr/shiny_transcriptomic_aggregator_ectocarpus.git
+repo_folder: /srv/shiny-server/shiny_transcriptomic_aggregator_ectocarpus/
+repo_version: master
+
+# Conf vars
+shiny_conf: shiny-sta.conf
+ldap_conf: ldap-auth.conf

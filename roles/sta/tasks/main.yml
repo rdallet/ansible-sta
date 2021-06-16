@@ -1,19 +1,19 @@
 - name: Clone github repository
-    git:
-        repo: https://github.com/abims-sbr/shiny_transcriptomic_aggregator_ectocarpus.git
-        dest: /srv/shiny-server/shiny_transcriptomic_aggregator_ectocarpus/
-        version: master
+  ansible.builtin.git:
+    repo: "{{ repo_name }}"
+    dest: "{{ repo_folder }}"
+    version: "{{ repo_version }}"
 - name: Copy shiny-sta nginx configuration file
-    copy:
-        src: roles/sta/files/shiny-sta.conf
-        dest: /etc/nginx/conf.d/shiny-sta.conf
-        owner: root
-        group: root
-        mode: '0644'
+  copy:
+    src: "{{ shiny_conf }}"
+    dest: "/etc/nginx/conf.d/{{ shiny_conf }}"
+    owner: root
+    group: root
+    mode: '0644'
 - name: Copy ldap-auth nginx configuration file
-    copy:
-        src: roles/sta/files/sta-ldap-auth.conf
-        dest: /etc/nginx/conf.d/sta-ldap-auth.conf
-        owner: root
-        group: root
-        mode: '0644'
+  copy:
+    src: "{{ ldap_conf }}"
+    dest: "/etc/nginx/conf.d/{{ ldap_conf }}"
+    owner: root
+    group: root
+    mode: '0644'

@@ -7,6 +7,4 @@
         state: present
         update_cache: no
   roles:
-    - role: geerlingguy.nginx
-    - role: oefenweb.r
-    - role: oefenweb.shiny-server
+    - sta
