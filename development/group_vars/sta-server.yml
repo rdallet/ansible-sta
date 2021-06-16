@@ -1,0 +1,6 @@
+---
+
+ansible_processor_vcpus: auto
+r_packages:
+  - name : shiny
+shiny_server_version: 1.5.6.875

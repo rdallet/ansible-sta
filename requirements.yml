@@ -1,5 +1,7 @@
-- src: geerlingguy.nginx
-- src: oefenweb.r
-- src: oefenweb.shiny-server
+---
+roles:
+  - src: geerlingguy.nginx
+  - src: oefenweb.r
+  - src: oefenweb.shiny-server
 
 
