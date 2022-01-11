@@ -3,6 +3,9 @@
     repo: "{{ repo_name }}"
     dest: "{{ repo_folder }}"
     version: "{{ repo_version }}"
+    accept_hostkey: yes
+    force: yes
+    recursive: no
 - name: Copy shiny-sta nginx configuration file
   copy:
     src: "{{ shiny_conf }}"

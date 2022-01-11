@@ -1,0 +1,8 @@
+---
+dependencies:
+- src: geerlingguy.nginx
+  version: 3.1.0
+- src: oefenweb.latest_r
+  version: 3.1.1
+- src: oefenweb.shiny_server
+  version: 1.1.31
