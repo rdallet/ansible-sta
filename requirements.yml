@@ -1,8 +1,8 @@
 ---
 roles:
   - src: geerlingguy.nginx
-  - src: oefenweb.r
-  - src: oefenweb.shiny-server
+  - src: oefenweb.latest_r
+  - src: oefenweb.shiny_server
 
 collections:
   - name: community.general

@@ -1,0 +1,11 @@
+- hosts: localhost
+  connection: local  
+  become: yes
+  pre_tasks:
+    - name: "Installing gnupg"
+      yum:
+        name: gnupg
+        state: present
+        update_cache: no
+  roles:
+    - sta
